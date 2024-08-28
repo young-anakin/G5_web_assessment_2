@@ -1,6 +1,6 @@
 // src/constants/apiEndpoints.ts
 
-// import { Blog } from '../features/blogs/types';
+// import { Blog } from './data/data.json';
 // src/features/blogs/types.ts
 
 export interface Blog {
@@ -30,7 +30,8 @@ export interface Blog {
   
 
   export async function fetchBlogsAPI(): Promise<Blog[]> {
-    const response = await fetch('https://a2sv-backend.onrender.com/api/blogs'); // URL should be in quotes
+    const response = await fetch('./data/data.json');
+    console.log(response) // Path relative to the public directory
     if (!response.ok) {
         throw new Error('Failed to fetch blogs');
     }
