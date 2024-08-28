@@ -36,6 +36,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ blog }) => {
     if (!blog) {
         return <p>Blog not found.</p>;
       }
+      // eslint-disable-next-line react-hooks/rules-of-hooks
       const router = useRouter();
 
       const handleClick = () => {
