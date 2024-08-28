@@ -17,12 +17,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap');
-        </style>
-        <style>
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
